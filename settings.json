@@ -1,0 +1,6 @@
+{
+    "e-z-paste.apiKey": "your-api-key",
+    "e-z-paste.description": "Visual Studio Code",
+    "e-z-paste.priority": 9999,
+    "e-z-paste.side": "right"
+}

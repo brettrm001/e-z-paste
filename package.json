@@ -1,0 +1,63 @@
+{
+  "name": "e-z-paste",
+  "displayName": "E-Z Paste",
+  "description": "Turns your current file or selected code into a paste that will then be uploaded to E-Z.host",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "e-z-paste.apiKey": {
+          "type": "string",
+          "default": "your-api-key",
+          "description": "Your E-Z.host API Key"
+        },
+        "e-z-paste.description": {
+          "type": "string",
+          "default": "Visual Studio Code",
+          "description": "Custom upload description (Must be at least 1 character)"
+        },
+        "e-z-paste.priority": {
+          "type": "number",
+          "default": 9999,
+          "description": "Alters the position of the E-Z Paste button"
+        },
+        "e-z-paste.side": {
+          "type": "string",
+          "default": "right",
+          "description": "left/right/disabled - Changes the alignment of the E-Z Paste button, Can be negative"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "e-z-paste.createPaste",
+        "title": "E-Z Paste: Create Paste"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
