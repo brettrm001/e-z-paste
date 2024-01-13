@@ -2,7 +2,7 @@
   "name": "e-z-paste",
   "displayName": "E-Z Paste",
   "description": "Turns your current file or selected code into a paste that will then be uploaded to E-Z.host",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.85.0"
   },
