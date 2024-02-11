@@ -28,6 +28,9 @@ None, if you encounter any open an issue on the github repo.
 
 ## Release Notes
 
+### 1.0.2
+Fixed issue with buttons 
+
 ### 1.0.1
 Added extension image
 

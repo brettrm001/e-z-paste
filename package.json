@@ -4,7 +4,7 @@
   "publisher": "brettrm001",
   "repository": "https://github.com/brettrm001/e-z-paste",
   "description": "Turns your current file or selected code into a paste that will then be uploaded to E-Z.host",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
